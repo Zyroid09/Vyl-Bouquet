@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Literata:wght@400;700&display=swap");
+
+body {
+  background-image: url(assets/background2.JPG);
+}
+
+h2 {
+  font-family: "Literata", serif;
+  color: #ff5d8f;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: white;
+  height: 80px;
+  margin: 20px;
+  border-radius: 16px;
+  padding: 0.5rem;
+  border: 3px solid pink;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.navbar-brand img {
+  height: 50px;
+  width: auto;
+}
+
+@media (max-width: 375px) {
+  .navbar {
+    height: auto;
+    margin: 10px;
+    padding: 0.5rem;
+    border-radius: 12px;
+  }
+  .navbar-brand img {
+    height: 40px;
+  }
+  .navbar-toggler {
+    font-size: 1rem;
+  }
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+/* hero start */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(assets/img_hero2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  color: white;
+  font-family: "Literata", serif;
+  font-weight: bold;
+  font-size: 55px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.hero .btn {
+  font-size: 20px;
+  padding: 10px 22px;
+  border-radius: 8px;
+  background-color: #ff97b7;
+  border: none;
+}
+
+.hero .btn:hover {
+  background-color: #ff5d8f;
+}
+
+@media screen and (max-width: 1280px) {
+  .hero {
+    height: 90vh;
+    background-size: cover;
+    padding: 50px 30px;
+  }
+  .hero h1 {
+    font-size: 50px;
+  }
+  .hero p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .hero {
+    height: 70vh;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero {
+    height: 60vh;
+    padding: 30px 15px;
+  }
+  .hero h1 {
+    font-size: 30px;
+  }
+  .hero p {
+    font-size: 0.7rem;
+  }
+  .hero .btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+/* hero end */
+
+/* about start */
+.about {
+  width: 100%;
+  padding: 50px 0;
+}
+
+@media screen and (max-width: 375px) {
+  .about .row.mt-5 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about .col-md-6 {
+    width: 100%;
+  }
+  .about h2 {
+    font-size: 35px;
+  }
+  .about h3 {
+    font-size: 20px;
+  }
+  .about p {
+    font-size: 14px;
+  }
+  .about .card {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+/* about end */
+
+/* Keunggulan start */
+.keunggulan {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.keunggulan-card {
+  position: relative;
+  background-color: #ffc0cb;
+  border-radius: 16px;
+  padding: 50px 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* Efek hover - memperbesar kartu */
+.keunggulan-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Animasi masuk ke dalam viewport */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efek animasi ikon */
+.keunggulan-card .icon {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #ffc0cb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-5px);
+  }
+}
+
+.keunggulan-card .icon i {
+  font-size: 24px;
+  color: white;
+}
+
+.keunggulan-card p {
+  font-weight: normal;
+}
+/* Keunggulan End */
+
+/* product start */
+.product .card {
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); */
+}
+
+.product .card:hover {
+  background: pink;
+  transition: 0.2s;
+}
+
+.modal-header img {
+  height: 50px;
+  width: auto;
+}
+/* product start */
+
+/* testimoni start */
+.testimoni {
+  width: 100%;
+}
+/* testimoni end */
+
+/* contact start */
+.contact {
+  width: 100%;
+}
+
+.contact .card {
+  background-color: pink;
+  height: 275px;
+  border: none;
+  padding: 40px;
+}
+
+.contact .social-media {
+  font-size: 30px;
+}
+
+.contact-card {
+  margin: auto;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.card-form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-form img {
+  height: 50px;
+  width: auto;
+}
+
+.btn-form {
+  background-color: #ff97b7;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.btn-form:hover {
+  background-color: #ff5d8f;
+  color: white;
+}
+
+.info-item i {
+  font-size: 24px;
+  color: #ff97b7;
+  margin-right: 10px;
+}
+
+.social-media a {
+  font-size: 24px;
+  color: #ff97b7;
+  text-decoration: none;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.social-media a:hover {
+  color: #ff5d8f;
+}
+/* contact end */
+
+/* footer start */
+footer {
+  width: 100%;
+  height: 50vh;
+  background-color: pink;
+}
+
+footer img {
+  height: 50px;
+  width: auto;
+}
+/* footer End */

@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Link Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!--Link CSS-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Vyl.Bouquet</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="assets/logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler pe-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                Vyl.Bouquet
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-grey"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link mx-lg-2 active"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#">Testimoni</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#">FAQ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero d-flex align-items-center text-center text-md-start">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-7 mx-auto mx-md-0">
+              <h1>
+                Selamat Datang di <br />
+                Vyl Bouquet
+              </h1>
+              <p>
+                Setiap bunga memiliki cerita, dan kami di Vyl Bouquet siap
+                membantu Anda menyampaikan perasaan dengan rangkaian bunga yang
+                dirancang dengan penuh cinta dan ketulusan. Dari momen bahagia
+                hingga ungkapan kasih sayang, biarkan keindahan bunga kami
+                menjadi bagian dari kisah Anda.
+              </p>
+              <a href="#product">
+                <button class="btn btn-primary mt-3" type="button">
+                  Beli Sekarang!
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-12 text-center">
+              <h2>About</h2>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-md-6">
+              <h3 class="text-center">Vyl Bouquet</h3>
+              <p class="mt-4 text-center">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero
+                ad illo numquam? Recusandae quis odit, officia minus excepturi
+                voluptas corrupti quia rerum repellat, fugit quidem. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Dolorum iste quam
+                tempore nam esse quia corrupti! Debitis, aspernatur optio magnam
+                quibusdam sint velit aut earum.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <h3 class="text-center">Owner</h3>
+              <div class="row mt-4">
+                <div class="d-flex justify-content-center">
+                  <div class="card" style="width: 15rem">
+                    <img src="assets/vina.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Vina Enjelia</h5>
+                      <p class="card-text">
+                        Mahasiswa <br />
+                        Universitas Pendidikan Indonesia
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="keunggulan">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2>Why Choose Us</h2>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-5">
+            <div class="col-md-3 col-sm-6 mb-5">
+              <div class="keunggulan-card">
+                <div class="icon">
+                  <i class="bi bi-check-lg"></i>
+                </div>
+                <p>Keunggulan 1</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-5">
+              <div class="keunggulan-card">
+                <div class="icon">
+                  <i class="bi bi-check-lg"></i>
+                </div>
+                <p>Keunggulan 2</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-5">
+              <div class="keunggulan-card">
+                <div class="icon">
+                  <i class="bi bi-check-lg"></i>
+                </div>
+                <p>Keunggulan 3</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-5">
+              <div class="keunggulan-card">
+                <div class="icon">
+                  <i class="bi bi-check-lg"></i>
+                </div>
+                <p>Keunggulan 4</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product" id="product">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-12 mt-5 text-center">
+              <h2>Popular Product</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 mb-4">
+              <div
+                class="card p-2"
+                style="cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+                data-price="Rp120,000"
+                data-image="assets/buket1copy.jpg"
+                data-description="Buket bunga indah untuk momen spesial Anda."
+              >
+                <img src="assets/buket1copy.jpg" alt="" class="img-fluid" />
+                <div class="card-body">
+                  <h4>Rp120,000</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <div
+                class="card p-2"
+                style="cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+                data-price="Rp120,000"
+                data-image="assets/buket2.jpg"
+                data-description="Buket bunga indah untuk momen spesial Anda."
+              >
+                <img src="assets/buket2.jpg" alt="" class="img-fluid" />
+                <div class="card-body">
+                  <h4>Rp120,000</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <div
+                class="card p-2"
+                style="cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+                data-price="Rp120,000"
+                data-image="assets/buket3.jpg"
+                data-description="Buket bunga indah untuk momen spesial Anda."
+              >
+                <img src="assets/buket3.jpg" alt="" class="img-fluid" />
+                <div class="card-body">
+                  <h4>Rp120,000</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <div
+                class="card p-2"
+                style="cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+                data-price="Rp120,000"
+                data-image="assets/buket4.jpg"
+                data-description="Buket bunga indah untuk momen spesial Anda."
+              >
+                <img src="assets/buket4.jpg" alt="" class="img-fluid" />
+                <div class="card-body">
+                  <h4>Rp120,000</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <div
+                class="card p-2"
+                style="cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+                data-price="Rp120,000"
+                data-image="assets/buket5.jpg"
+                data-description="Buket bunga indah untuk momen spesial Anda."
+              >
+                <img src="assets/buket5.jpg" alt="" class="img-fluid" />
+                <div class="card-body">
+                  <h4>Rp120,000</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <div
+                class="card p-2"
+                style="cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+                data-price="Rp120,000"
+                data-image="assets/buket6.jpg"
+                data-description="Buket bunga indah untuk momen spesial Anda."
+              >
+                <img src="assets/buket6.jpg" alt="" class="img-fluid" />
+                <div class="card-body">
+                  <h4>Rp120,000</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <div
+                class="card p-2"
+                style="cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+                data-price="Rp120,000"
+                data-image="assets/buket7.jpg"
+                data-description="Buket bunga indah untuk momen spesial Anda."
+              >
+                <img src="assets/buket7.jpg" alt="" class="img-fluid" />
+                <div class="card-body">
+                  <h4>Rp120,000</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <div
+                class="card p-2"
+                style="cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+                data-price="Rp120,000"
+                data-image="assets/buket8.jpg"
+                data-description="Buket bunga indah untuk momen spesial Anda."
+              >
+                <img src="assets/buket8.jpg" alt="" class="img-fluid" />
+                <div class="card-body">
+                  <h4>Rp120,000</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <div
+                class="card p-2"
+                style="cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+                data-price="Rp120,000"
+                data-image="assets/buket9.jpg"
+                data-description="Buket bunga indah untuk momen spesial Anda."
+              >
+                <img src="assets/buket9.jpg" alt="" class="img-fluid" />
+                <div class="card-body">
+                  <h4>Rp120,000</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <div
+                class="card p-2"
+                style="cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+                data-price="Rp120,000"
+                data-image="assets/buket10.jpg"
+                data-description="Buket bunga indah untuk momen spesial Anda."
+              >
+                <img src="assets/buket10.jpg" alt="" class="img-fluid" />
+                <div class="card-body">
+                  <h4>Rp120,000</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <div
+                class="card p-2"
+                style="cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+                data-price="Rp120,000"
+                data-image="assets/buket11.jpg"
+                data-description="Buket bunga indah untuk momen spesial Anda."
+              >
+                <img src="assets/buket11.jpg" alt="" class="img-fluid" />
+                <div class="card-body">
+                  <h4>Rp120,000</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <div
+                class="card p-2"
+                style="cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+                data-price="Rp120,000"
+                data-image="assets/buket12.jpg"
+                data-description="Buket bunga indah untuk momen spesial Anda."
+              >
+                <img src="assets/buket12.jpg" alt="" class="img-fluid" />
+                <div class="card-body">
+                  <h4>Rp120,000</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="productModal"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <img src="assets/logo.png" style="height: 50px" />
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body text-center">
+                <img
+                  id="modalImage"
+                  src=""
+                  class="img-fluid mb-3"
+                  alt="Product Image"
+                />
+                <h4 id="modalPrice"></h4>
+                <p id="modalDescription"></p>
+                <p class="fw-bold mt-3">Order Sekarang Melalui</p>
+
+                <div class="d-flex justify-content-center gap-2">
+                  <a
+                    id="shopeeLink"
+                    href="#"
+                    target="_blank"
+                    class="btn btn-danger"
+                  >
+                    <i class="fa-brands fa-shopify"></i> Shopee
+                  </a>
+                  <a
+                    id="instagramLink"
+                    href="https://instagram.com/vyl.bouquet"
+                    target="_blank"
+                    class="btn btn-primary"
+                  >
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                  </a>
+                  <a
+                    id="whatsappLink"
+                    href="#"
+                    target="_blank"
+                    class="btn btn-success"
+                  >
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimoni">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 mt-5 text-center">
+              <h2>Testimoni</h2>
+            </div>
+          </div>
+
+          <div
+            id="testimonialCarousel"
+            class="carousel slide mt-5"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div
+                      class="card mx-auto"
+                      style="max-width: 500px; height: 270px"
+                    >
+                      <div class="card-body text-center">
+                        <img
+                          src="assets/nopal.jpg"
+                          class="rounded-circle mb-3"
+                          width="80"
+                          alt="User 1"
+                        />
+                        <h5 class="card-title">John Doe</h5>
+                        <p class="text-warning">★★★★★</p>
+                        <p class="card-text">
+                          "Pelayanan sangat memuaskan! Bunga berkualitas tinggi
+                          dan dikemas dengan baik."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div
+                      class="card mx-auto"
+                      style="max-width: 500px; height: 270px"
+                    >
+                      <div class="card-body text-center">
+                        <img
+                          src="assets/nopal.jpg"
+                          class="rounded-circle mb-3"
+                          width="80"
+                          alt="User 2"
+                        />
+                        <h5 class="card-title">Jane Smith</h5>
+                        <p class="text-warning">★★★★★</p>
+                        <p class="card-text">
+                          "Buket bunga sangat cantik dan tahan lama. Sangat
+                          recommended!"
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div
+                      class="card mx-auto"
+                      style="max-width: 500px; height: 270px"
+                    >
+                      <div class="card-body text-center">
+                        <img
+                          src="assets/user3.jpg"
+                          class="rounded-circle mb-3"
+                          width="80"
+                          alt="User 3"
+                        />
+                        <h5 class="card-title">Michael Lee</h5>
+                        <p class="text-warning">★★★★★</p>
+                        <p class="card-text">
+                          "Sangat puas dengan produk dan layanan dari Vyl
+                          Bouquet!"
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div
+                      class="card mx-auto"
+                      style="max-width: 500px; height: 270px"
+                    >
+                      <div class="card-body text-center">
+                        <img
+                          src="assets/user4.jpg"
+                          class="rounded-circle mb-3"
+                          width="80"
+                          alt="User 4"
+                        />
+                        <h5 class="card-title">Sarah Connor</h5>
+                        <p class="text-warning">★★★★★</p>
+                        <p class="card-text">
+                          "Layanan pelanggan sangat ramah dan responsif! Pasti
+                          akan membeli lagi."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div
+                      class="card mx-auto"
+                      style="max-width: 500px; height: 270px"
+                    >
+                      <div class="card-body text-center">
+                        <img
+                          src="assets/user5.jpg"
+                          class="rounded-circle mb-3"
+                          width="80"
+                          alt="User 5"
+                        />
+                        <h5 class="card-title">Alex Turner</h5>
+                        <p class="text-warning">★★★★★</p>
+                        <p class="card-text">
+                          "Bunga yang saya pesan sangat indah dan pengirimannya
+                          tepat waktu!"
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div
+                      class="card mx-auto"
+                      style="max-width: 500px; height: 270px"
+                    >
+                      <div class="card-body text-center">
+                        <img
+                          src="assets/user6.jpg"
+                          class="rounded-circle mb-3"
+                          width="80"
+                          alt="User 6"
+                        />
+                        <h5 class="card-title">Emily Clark</h5>
+                        <p class="text-warning">★★★★★</p>
+                        <p class="card-text">
+                          "Sangat merekomendasikan Vyl Bouquet! Produk yang luar
+                          biasa."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tombol Navigasi Carousel -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 mt-5 text-center">
+              <h2>Contact Us</h2>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-md-12 text-center mb-4">
+              <div
+                class="card contact-card d-flex align-items-center justify-content-center"
+              >
+                <h3 class="mb-3">Hubungi Kami</h3>
+                <p class="mt-3">
+                  Vyl Bouquet siap membantu Anda menciptakan momen indah dengan
+                  rangkaian bunga terbaik. Jika Anda memiliki pertanyaan, ingin
+                  melakukan pemesanan, atau membutuhkan konsultasi mengenai
+                  buket bunga yang sesuai dengan kebutuhan Anda, jangan ragu
+                  untuk menghubungi kami.
+                </p>
+                <div class="social-media mt-4">
+                  <a href="#" class="me-2"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulir Kontak -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card-form p-4">
+                <div class="row">
+                  <!-- Form -->
+                  <div class="col-md-7 mb-4">
+                    <img src="assets/logo.png" alt="" class="mb-4" />
+
+                    <form>
+                      <div class="mb-3">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Enter email"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <input
+                          type="password"
+                          class="form-control"
+                          placeholder="Password"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <textarea
+                          class="form-control"
+                          rows="4"
+                          placeholder="Message"
+                        ></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-form w-100">
+                        Kirim Pesan
+                      </button>
+                    </form>
+                  </div>
+
+                  <!-- Informasi Kontak -->
+                  <div
+                    class="col-md-5 d-flex flex-column justify-content-center"
+                  >
+                    <div class="info-item d-flex align-items-center mb-3">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <div>
+                        <h6 class="mb-1">Location</h6>
+                        <p class="text-muted">Kiara Condong - Bandung</p>
+                      </div>
+                    </div>
+
+                    <div class="info-item d-flex align-items-center mb-3">
+                      <i class="fa-solid fa-phone"></i>
+                      <div>
+                        <h6 class="mb-1">Phone Number</h6>
+                        <p class="text-muted">(123) 456-7890</p>
+                      </div>
+                    </div>
+
+                    <div class="info-item d-flex align-items-center">
+                      <i class="fa-solid fa-envelope"></i>
+                      <div>
+                        <h6 class="mb-1">Email Address</h6>
+                        <p class="text-muted">info@domain.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center mb-4">
+              <h2>FAQ</h2>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Apakah bisa memesan rangkaian bunga custom sesuai keinginan?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Tentu! Kami menyediakan layanan custom bouquet sesuai dengan
+                    warna, jenis bunga, dan tema yang Anda inginkan. Hubungi
+                    kami untuk konsultasi lebih lanjut.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Apakah Vyl Bouquet menyediakan layanan pengiriman?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Berapa lama waktu yang dibutuhkan untuk proses pembuatan
+                    bouquet?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="d-flex align-items-center">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <a href="#"><img src="assets/logo.png" alt="" /></a>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
+                dolorum dolore, voluptates est praesentium aut debitis sint
+                possimus saepe ut.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <h3 class="mb-3">Quick Links</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="" class="text-dark text-decoration-none">Home</a>
+                </li>
+                <li>
+                  <a href="" class="text-dark text-decoration-none">About</a>
+                </li>
+                <li>
+                  <a href="" class="text-dark text-decoration-none">Product</a>
+                </li>
+                <li>
+                  <a href="" class="text-dark text-decoration-none"
+                    >Testimoni</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-dark text-decoration-none">FAQ</a>
+                </li>
+                <li>
+                  <a href="" class="text-dark text-decoration-none">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3 class="mb-3">Contact Person</h3>
+              <div class="d-flex align-items-center">
+                <i class="fa-brands fa-square-whatsapp fs-3"></i>
+                <p class="ms-2 mb-0">0813-1186-2037</p>
+              </div>
+              <div class="d-flex align-items-center mt-2">
+                <i class="fa-solid fa-envelope fs-4"></i>
+                <p class="ms-2 mb-0">vylbouquet@gmail.com</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h3 class="mb-3">Social Media</h3>
+              <a
+                href="#"
+                class="d-flex align-items-center text-dark text-decoration-none"
+              >
+                <i class="fa-brands fa-instagram fs-3"></i>
+                <p class="ms-2 mb-0">@vyl.bouquet</p>
+              </a>
+            </div>
+            <hr />
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <p>&copy; 2025 Vyl Bouquet. All Right Reserved</p>
+            </div>
+            <div class="col-md-6 text-end">
+              <p>Developed by Naufal Abdala Syawali | Powered by Gamelab.id</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Link JS-->
+    <script src="script.js"></script>
+
+    <!--Bootstrap JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

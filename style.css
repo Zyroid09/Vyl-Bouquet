@@ -36,7 +36,7 @@ btn-close:focus {
   width: auto;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 455px) {
   .navbar {
     height: auto;
     margin: 10px;
@@ -94,7 +94,7 @@ btn-close:focus {
 
 @media screen and (max-width: 1280px) {
   .hero {
-    height: 90vh;
+    height: 100vh;
     background-size: cover;
     padding: 50px 30px;
   }

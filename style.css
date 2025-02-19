@@ -119,7 +119,7 @@ btn-close:focus {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
   .hero {
     height: 60vh;
     padding: 30px 15px;

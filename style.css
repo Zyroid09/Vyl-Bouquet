@@ -419,4 +419,32 @@ footer img {
   height: 50px;
   width: auto;
 }
+
+@media screen and (max-width: 995px) {
+  footer img {
+    height: 38px;
+    width: auto;
+  }
+  footer p {
+    font-size: 14px;
+  }
+  footer h3 {
+    font-size: 23px;
+  }
+  footer a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 455px) {
+  footer .row {
+    flex-direction: column;
+    text-align: left;
+  }
+  footer .col-md-3,
+  footer .col-md-6 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
 /* footer End */

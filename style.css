@@ -408,6 +408,14 @@ btn-close:focus {
 }
 /* contact end */
 
+/* faq Start */
+@media (max-width: 455px) {
+  .faq h2 {
+    font-size: 35px;
+  }
+}
+/* faq End */
+
 /* footer start */
 footer {
   width: 100%;

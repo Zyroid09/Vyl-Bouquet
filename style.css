@@ -303,6 +303,25 @@ btn-close:focus {
 .testimoni {
   width: 100%;
 }
+
+@media (max-width: 455px) {
+  .testimoni h2 {
+    font-size: 35px;
+  }
+  .testimoni .carousel-item .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimoni .col-md-6 {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .testimoni .card {
+    height: auto;
+  }
+}
 /* testimoni end */
 
 /* contact start */
@@ -312,7 +331,7 @@ btn-close:focus {
 
 .contact .card {
   background-color: pink;
-  height: 275px;
+  height: auto;
   border: none;
   padding: 40px;
 }
@@ -370,12 +389,29 @@ btn-close:focus {
 .social-media a:hover {
   color: #ff5d8f;
 }
+
+@media (max-width: 455px) {
+  .contact h2 {
+    font-size: 35px;
+  }
+  .contact p {
+    font-size: 14px;
+  }
+  .contact .card {
+    padding: 20px;
+    height: auto;
+  }
+  .contact .social-media a {
+    font-size: 20px;
+    padding: 8px 12px;
+  }
+}
 /* contact end */
 
 /* footer start */
 footer {
   width: 100%;
-  height: 50vh;
+  height: auto;
   background-color: pink;
 }
 

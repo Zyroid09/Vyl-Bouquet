@@ -445,6 +445,10 @@ footer img {
 }
 
 @media (max-width: 455px) {
+  footer img {
+    height: 45px;
+    width: auto;
+  }
   footer .row {
     flex-direction: column;
     text-align: left;

@@ -281,7 +281,23 @@ btn-close:focus {
   height: 50px;
   width: auto;
 }
-/* product start */
+
+@media (max-width: 455px) {
+  .product h2 {
+    font-size: 35px;
+  }
+  .product .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product .col-md-3 {
+    width: 50%;
+    max-width: 300px;
+  }
+}
+/* product End */
 
 /* testimoni start */
 .testimoni {

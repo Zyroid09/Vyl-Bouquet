@@ -282,6 +282,18 @@ btn-close:focus {
   width: auto;
 }
 
+@media screen and (max-width: 995px) {
+  .product .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .product .col-md-3 {
+    width: 30%;
+    max-width: 300px;
+  }
+}
+
 @media (max-width: 455px) {
   .product h2 {
     font-size: 35px;

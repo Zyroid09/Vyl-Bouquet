@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("modalDescription").textContent = description;
 
       // Update links
-      document.getElementById("shopeeLink").href = "https://shopee.co.id";
+      document.getElementById("shopeeLink").href = "https://id.shp.ee/knHZ5cz";
       document.getElementById("whatsappLink").href =
-        "https://wa.me/081311862037";
+        "https://wa.me/+62882002048431";
     });
   });
 });

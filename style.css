@@ -243,6 +243,18 @@ btn-close:focus {
   font-weight: normal;
 }
 
+@media screen and (max-width: 995px) {
+  .keunggulan .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .keunggulan .col-md-3 {
+    width: 50%;
+    max-width: 300px;
+  }
+}
+
 @media (max-width: 455px) {
   .keunggulan .row {
     flex-direction: column;
